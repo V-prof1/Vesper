@@ -1,10 +1,19 @@
-# 🩸 VESPER: ABISMO · Pixel Art Edition
+# 🩸 VESPER: ABISMO · Caçada Profissional (Pixel Art)
 
 ![Prévia dos personagens](PREVIA_PERSONAGENS.png)
 
 **Terror assimétrico em pixel art, para um jogador controlar o assassino contra seis sobreviventes com inteligência artificial.** Projeto criado com HTML5/Canvas, JavaScript e Java para Android, com todos os recursos do jogo empacotados localmente no APK.
 
 [![Android APK](https://github.com/V-prof1/Vesper/actions/workflows/android-apk.yml/badge.svg)](https://github.com/V-prof1/Vesper/actions/workflows/android-apk.yml)
+
+## 🐺 Atualização Pro Bots + Moris (2026)
+
+- **14 silhuetas diferentes:** Tecelã é aranha completa de oito patas, Rastreador é lobo quadrúpede, Corvo é ave alada, Autômato é máquina com esteiras, além dos demais corpos especiais.
+- **Seis bots estratégicos:** builds com kit médico, lanterna (flashlight) e uma caixa de ferramentas com sabotagem de gancho de uso único.
+- **Salvamento em equipe:** bots podem atordoar o assassino que carrega um aliado usando lanternas ou paletes, exigindo posição e tempo corretos.
+- **Loops mais fechados:** coberturas adicionais próximas de paletes, com obstáculos que alteram as rotas.
+- **14 moris encenados:** 104 quadros cada, com ações temáticas de captura, finalização e desaparecimento no Abismo, em pixel art estilizada.
+- **Build automatizada:** o workflow gera sprites, testa os arquivos, compila o APK offline e tenta sincronizar os assets atualizados com o repositório.
 
 ## 🎮 O jogo
 

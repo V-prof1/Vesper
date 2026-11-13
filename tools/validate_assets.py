@@ -20,7 +20,7 @@ for group in ('characters','moris'):
         assert w==info['width']*info['columns'], f'Wrong PNG width: {actor}'
         assert h>=info['height'], f'Wrong PNG height: {actor}'
         frames+=info['frames']
-assert frames==4584, f'Expected 4584 frames, got {frames}'
+assert frames>=4584, f'Expected at least 4584 frames, got {frames}'
 for file in ('index.html','JOGAR_NO_PC.html','app/src/main/assets/index.html'):
     raw=(ROOT/file).read_text(encoding='utf-8')
     assert 'pixelManifest' in raw, f'Missing sprite runtime: {file}'

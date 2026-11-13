@@ -2,7 +2,7 @@
 from pathlib import Path
 import json, shutil
 ROOT=Path(__file__).resolve().parents[1]
-SRC=ROOT/'tools/vesper_base.html'
+SRC=ROOT/'tools/vesper_enhanced.html'
 DEST=ROOT/'app/src/main/assets/index.html'
 manifest=json.loads((ROOT/'app/src/main/assets/assets/sprites.json').read_text(encoding='utf-8'))
 s=SRC.read_text(encoding='utf-8')
@@ -14,7 +14,7 @@ s=s.replace('VESPER: ABISMO — ANIMAÇÕES VIVAS', 'VESPER: ABISMO — PIXEL AR
 s=s.replace('/* Sem feed de notificações: evita reanimação e pisca-pisca no celular. */', '/* Sem feed de notificações: evita reanimação e pisca-pisca no celular. */')
 s=s.replace('</style>', '''\n/* Pixel sprites: recorte de quadro fixo, renderização nearest-neighbor e atlas sem suavização */
 #game,#cinCanvas{image-rendering:pixelated}
-.survCard .face{min-height:40px;background-size:512px auto;background-repeat:no-repeat;background-position:6px 0;image-rendering:pixelated}
+.survCard .face{min-height:40px;background-size:768px auto;background-repeat:no-repeat;background-position:6px 0;image-rendering:pixelated}
 .survCard .face .avatar{display:none}
 .killerOpt .portrait.pixelPortrait{background-color:#0c0d16;image-rendering:pixelated;min-width:39px;min-height:46px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #58546d72;border-radius:4px}
 </style>''',1)
@@ -23,7 +23,7 @@ manifest_text=json.dumps(manifest,ensure_ascii=False,separators=(',',':'))
 s=s.replace('<script>\n(()=>',f'<script id="pixelManifest" type="application/json">{manifest_text}</script>\n<script>\n(()=>',1)
 plugin=r'''
 /* === VESPER PIXEL ART RUNTIME / REAL SPRITE ATLAS ===
-   20 characters, 3,464 animated gameplay frames + 14 unique 80-frame moris.
+   20 characters with unique anatomy + 14 staged 104-frame moris.
    Offline: PNG images + an embedded manifest; no external packages or network.
 */
 const PIXEL = JSON.parse(document.getElementById('pixelManifest').textContent);
@@ -61,7 +61,7 @@ function pixelDrawKiller(t){
  else if(vel>18)clip=player.carrying!==null?'carry':vel>killer().speed*.85?'run':'walk';
  ctx.save();ctx.translate(player.x,player.y);ctx.rotate(player.angle+Math.PI/2);
  if(player.stealth>0)ctx.globalAlpha=.58;
- const size=['brute','judge','automaton'].includes(selectedKiller)?1.22:1.10;
+ const size=['brute','judge','automaton','weaver','hunter','raven'].includes(selectedKiller)?.89:.76;
  if(player.dashing>0){ctx.save();ctx.globalAlpha=.36;ctx.fillStyle=killer().color;ctx.fillRect(-26,11,52,4);ctx.restore()}
  pixelDrawFrame(selectedKiller,clip,phase,t,size);ctx.restore();
  if(player.stun>0){ctx.save();ctx.fillStyle='#fff0b7';ctx.font='bold 12px monospace';ctx.textAlign='center';ctx.fillText('ATORDOADO',player.x,player.y-55);ctx.restore()}
@@ -83,7 +83,7 @@ function pixelDrawSurvivor(s,t){
  ctx.save();ctx.translate(s.x,s.y);ctx.rotate((s.state==='carried'?player.angle:s.angle)+Math.PI/2);if(s.state==='down')ctx.rotate(-Math.PI/2);
  if(s.state==='carried')ctx.globalAlpha=.82;
  if(s.state==='injured')ctx.globalAlpha=.94;
- pixelDrawFrame(id,clip,phase,t,1.02);ctx.restore();
+ pixelDrawFrame(id,clip,phase,t,.70);ctx.restore();
  if(s.state==='injured'){ctx.save();ctx.strokeStyle='#f65069';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(s.x-14,s.y-12);ctx.lineTo(s.x+13,s.y+6);ctx.stroke();ctx.restore()}
  if(s.state==='hooked'&&s.hookTimer){ctx.save();ctx.fillStyle='#ff607e';ctx.fillRect(s.x-25,s.y-57,50*Math.max(0,s.hookTimer/(s.hookCount===1?27:24)),3);ctx.restore()}
  ctx.save();ctx.textAlign='center';ctx.font='900 10px monospace';ctx.fillStyle='#030409';ctx.fillText(s.name,s.x+1,s.y-44);ctx.fillStyle='#ffffff';ctx.fillText(s.name,s.x,s.y-45);ctx.restore();
@@ -108,7 +108,7 @@ function pixelDecorateMenu(){
  for(const button of document.querySelectorAll('#killerSelect [data-killer]')){
   const id=button.dataset.killer;const face=button.querySelector('.portrait');if(!face)continue;
   face.classList.add('pixelPortrait');face.style.backgroundImage=`url(assets/characters/${id}.png)`;
-  face.style.backgroundPosition='2px 3px';face.style.backgroundSize='512px auto';face.style.backgroundRepeat='no-repeat';face.style.color='transparent';
+  face.style.backgroundPosition='2px 3px';face.style.backgroundSize='768px auto';face.style.backgroundRepeat='no-repeat';face.style.color='transparent';
  }
 }
 const pixObserver=new MutationObserver(()=>pixelDecorateMenu());
