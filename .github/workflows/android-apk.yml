@@ -16,7 +16,7 @@ on:
 
 jobs:
   android:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
     steps:
@@ -29,16 +29,34 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - name: Android SDK
-        uses: android-actions/setup-android@v3
+      # Avoid setup-android@v3: it tries to install the removed legacy SDK package 'tools'.
+      # GitHub's Ubuntu runner already includes the command-line Android SDK manager.
       - name: Install Android 35
-        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+        shell: bash
+        run: |
+          echo "ANDROID_HOME=${ANDROID_HOME:-unset}"
+          SDKMANAGER="$(command -v sdkmanager || true)"
+          if [[ -z "$SDKMANAGER" ]]; then
+            SDKMANAGER="$(find "${ANDROID_HOME:-/usr/local/lib/android/sdk}" -type f -name sdkmanager -print -quit)"
+          fi
+          if [[ -z "$SDKMANAGER" ]]; then
+            echo "Android SDK manager not available" >&2
+            exit 1
+          fi
+          "$SDKMANAGER" --version
+          "$SDKMANAGER" --install 'platforms;android-35' 'build-tools;35.0.0'
       - name: Gradle 8.9
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
       - name: Build offline APK
         run: gradle :app:assembleDebug --stacktrace --no-daemon
+      - name: Verify Android APK
+        shell: bash
+        run: |
+          test -s app/build/outputs/apk/debug/app-debug.apk
+          unzip -t app/build/outputs/apk/debug/app-debug.apk | tail -n 1
+          sha256sum app/build/outputs/apk/debug/app-debug.apk
       - name: Upload Vesper APK
         uses: actions/upload-artifact@v4
         with:
