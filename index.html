@@ -314,7 +314,7 @@ const KPERKS=[
 {id:'tracks',level:1,icon:'👣',name:'Caçador Incansável',desc:'Rastros e arranhões dos sobreviventes duram +3 s; arranhões próximos brilham mais.'},
 {id:'predator',level:2,icon:'🐺',name:'Sede de Caça',desc:'Acertar um golpe concede +10% de velocidade durante 4 s.'},
 {id:'ruin',level:3,icon:'⚙',name:'Ferrugem Profana',desc:'Danificar geradores remove +5% do progresso e mantém a regressão por mais 8 s.'},
-{id:'dash',level:4,icon:'⚡',name:'Ritmo Implacável',desc:'Recarga da primeira habilidade 17% menor.'},
+{id:'dash',level:4,icon:'⚡',name:'Passo Implacável',desc:'Recarga da investida 22% menor.'},
 {id:'sense',level:5,icon:'👁',name:'Olhos no Escuro',desc:'Instinto dura +3 s e sua recarga diminui 20%.'},
 {id:'brutal',level:6,icon:'🔨',name:'Brutalidade',desc:'Recupera-se de atordoamentos por pallets 40% mais rápido.'},
 {id:'hook',level:8,icon:'🪝',name:'Lamento do Gancho',desc:'Ao pendurar um sobrevivente, revela os demais por 3,5 s.'},
@@ -734,7 +734,6 @@ function buildProLoopClusters(cfg){
  }
  cfg.loopCoversPlaced=placed;
 }
-
 function init(){currentMap=selectedMap==='random'?Object.keys(MAPS)[Math.floor(Math.random()*Object.keys(MAPS).length)]:selectedMap;setupMap();buildLoopMap();clock=difficulty==='hard'?620:710;elapsed=0;latestHud=0;score=0;killCount=0;escapeCount=0;genDone=0;gatePowered=false;gateOpen=false;enemySense=0;shake=0;flash=0;heartbeat=0;notice=[];particles=[];slashFx=[];footprints=[];cinders=[];blood=[];scratches=[];noiseEvents=[];finisher=null;botGenErrors=0;matchFinishes=0;matchHits=0;matchHooks=0;matchKicks=0;matchVaults=0;controls.x=0;controls.y=0;joyState.x=0;joyState.y=0;traps=[];projectiles=[];turrets=[];consumptions=[];hookAlert=0;endDelay=0;v3Reset();
 const cfg=MAPS[currentMap];player={...safeSpot(22,13),r:23,angle:0,atk:0,dash:0,sense:0,trap:0,dashing:0,dashHit:false,stun:0,carrying:null,step:0,dashKind:'',speedBoost:0,stealth:0,roar:0,lastSafe:null,animation:0,anim:{attack:0,attackMax:1,cast:0,castMax:1,kick:0,speed:0,foot:0,trail:0}};
 bots=cfg.spawns.map(([x,y],i)=>({...safeSpot(x,y),id:i,name:names[i],color:colors[i],profile:PROFILES[i],state:'healthy',r:17,angle:rand(-3,3),fear:0,root:0,hookCount:0,hookTimer:0,lastHookId:-1,bleed:110,aiWait:Math.random()*.6,path:[],pathIdx:0,pathTo:'',pathTimer:0,target:null,task:'',repairFx:0,rescue:0,healing:0,genId:-1,noise:0,stunImmune:0,step:Math.random()*10,trailTime:0,escaped:false,vaultCD:0,palletCD:0,lastLoop:-1,lastCorner:-1,lastWindow:-1,windowMemory:0,vaultFx:0,repairPause:0,skillTimer:rand(9,15),skillTalent:[.76,.90,.82,.72,.83,.88][i],sprint:0,sprintCD:0,loopTimer:0,hideTimer:0,seen:0,jukeCD:0,jukeTime:0,jukeDir:1,invisibleTrail:0}));bots.forEach((s,i)=>{s.brain=makeBrain(s);setupProBot(s,i)});aiPings=[];aiRescues.clear();aiHeals.clear();
