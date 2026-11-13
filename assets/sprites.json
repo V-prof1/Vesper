@@ -1,0 +1,1193 @@
+{
+  "version": 1,
+  "pixelArt": true,
+  "size": [
+    64,
+    80
+  ],
+  "characters": {
+    "reaper": {
+      "id": "reaper",
+      "group": "killer",
+      "file": "assets/characters/reaper.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 67642
+    },
+    "shadow": {
+      "id": "shadow",
+      "group": "killer",
+      "file": "assets/characters/shadow.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 69514
+    },
+    "brute": {
+      "id": "brute",
+      "group": "killer",
+      "file": "assets/characters/brute.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 63442
+    },
+    "weaver": {
+      "id": "weaver",
+      "group": "killer",
+      "file": "assets/characters/weaver.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 80116
+    },
+    "hunter": {
+      "id": "hunter",
+      "group": "killer",
+      "file": "assets/characters/hunter.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 59493
+    },
+    "specter": {
+      "id": "specter",
+      "group": "killer",
+      "file": "assets/characters/specter.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 67658
+    },
+    "judge": {
+      "id": "judge",
+      "group": "killer",
+      "file": "assets/characters/judge.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 67539
+    },
+    "huntress": {
+      "id": "huntress",
+      "group": "killer",
+      "file": "assets/characters/huntress.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 66600
+    },
+    "pyre": {
+      "id": "pyre",
+      "group": "killer",
+      "file": "assets/characters/pyre.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 66414
+    },
+    "frost": {
+      "id": "frost",
+      "group": "killer",
+      "file": "assets/characters/frost.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 71175
+    },
+    "puppet": {
+      "id": "puppet",
+      "group": "killer",
+      "file": "assets/characters/puppet.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 86912
+    },
+    "raven": {
+      "id": "raven",
+      "group": "killer",
+      "file": "assets/characters/raven.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 84038
+    },
+    "automaton": {
+      "id": "automaton",
+      "group": "killer",
+      "file": "assets/characters/automaton.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 50608
+    },
+    "siren": {
+      "id": "siren",
+      "group": "killer",
+      "file": "assets/characters/siren.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 10,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "attack": {
+          "start": 64,
+          "frames": 28,
+          "fps": 24
+        },
+        "ability": {
+          "start": 92,
+          "frames": 28,
+          "fps": 18
+        },
+        "hurt": {
+          "start": 120,
+          "frames": 16,
+          "fps": 18
+        },
+        "carry": {
+          "start": 136,
+          "frames": 24,
+          "fps": 18
+        }
+      },
+      "frames": 160,
+      "bytes": 90942
+    },
+    "lia": {
+      "id": "lia",
+      "group": "survivor",
+      "file": "assets/characters/lia.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 13,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "hurt": {
+          "start": 64,
+          "frames": 16,
+          "fps": 18
+        },
+        "repair": {
+          "start": 80,
+          "frames": 24,
+          "fps": 18
+        },
+        "down": {
+          "start": 104,
+          "frames": 20,
+          "fps": 18
+        },
+        "hook": {
+          "start": 124,
+          "frames": 20,
+          "fps": 18
+        },
+        "vault": {
+          "start": 144,
+          "frames": 20,
+          "fps": 24
+        },
+        "carry": {
+          "start": 164,
+          "frames": 20,
+          "fps": 18
+        },
+        "heal": {
+          "start": 184,
+          "frames": 20,
+          "fps": 18
+        }
+      },
+      "frames": 204,
+      "bytes": 67014
+    },
+    "maya": {
+      "id": "maya",
+      "group": "survivor",
+      "file": "assets/characters/maya.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 13,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "hurt": {
+          "start": 64,
+          "frames": 16,
+          "fps": 18
+        },
+        "repair": {
+          "start": 80,
+          "frames": 24,
+          "fps": 18
+        },
+        "down": {
+          "start": 104,
+          "frames": 20,
+          "fps": 18
+        },
+        "hook": {
+          "start": 124,
+          "frames": 20,
+          "fps": 18
+        },
+        "vault": {
+          "start": 144,
+          "frames": 20,
+          "fps": 24
+        },
+        "carry": {
+          "start": 164,
+          "frames": 20,
+          "fps": 18
+        },
+        "heal": {
+          "start": 184,
+          "frames": 20,
+          "fps": 18
+        }
+      },
+      "frames": 204,
+      "bytes": 65342
+    },
+    "noah": {
+      "id": "noah",
+      "group": "survivor",
+      "file": "assets/characters/noah.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 13,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "hurt": {
+          "start": 64,
+          "frames": 16,
+          "fps": 18
+        },
+        "repair": {
+          "start": 80,
+          "frames": 24,
+          "fps": 18
+        },
+        "down": {
+          "start": 104,
+          "frames": 20,
+          "fps": 18
+        },
+        "hook": {
+          "start": 124,
+          "frames": 20,
+          "fps": 18
+        },
+        "vault": {
+          "start": 144,
+          "frames": 20,
+          "fps": 24
+        },
+        "carry": {
+          "start": 164,
+          "frames": 20,
+          "fps": 18
+        },
+        "heal": {
+          "start": 184,
+          "frames": 20,
+          "fps": 18
+        }
+      },
+      "frames": 204,
+      "bytes": 66189
+    },
+    "erik": {
+      "id": "erik",
+      "group": "survivor",
+      "file": "assets/characters/erik.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 13,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "hurt": {
+          "start": 64,
+          "frames": 16,
+          "fps": 18
+        },
+        "repair": {
+          "start": 80,
+          "frames": 24,
+          "fps": 18
+        },
+        "down": {
+          "start": 104,
+          "frames": 20,
+          "fps": 18
+        },
+        "hook": {
+          "start": 124,
+          "frames": 20,
+          "fps": 18
+        },
+        "vault": {
+          "start": 144,
+          "frames": 20,
+          "fps": 24
+        },
+        "carry": {
+          "start": 164,
+          "frames": 20,
+          "fps": 18
+        },
+        "heal": {
+          "start": 184,
+          "frames": 20,
+          "fps": 18
+        }
+      },
+      "frames": 204,
+      "bytes": 65267
+    },
+    "iris": {
+      "id": "iris",
+      "group": "survivor",
+      "file": "assets/characters/iris.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 13,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "hurt": {
+          "start": 64,
+          "frames": 16,
+          "fps": 18
+        },
+        "repair": {
+          "start": 80,
+          "frames": 24,
+          "fps": 18
+        },
+        "down": {
+          "start": 104,
+          "frames": 20,
+          "fps": 18
+        },
+        "hook": {
+          "start": 124,
+          "frames": 20,
+          "fps": 18
+        },
+        "vault": {
+          "start": 144,
+          "frames": 20,
+          "fps": 24
+        },
+        "carry": {
+          "start": 164,
+          "frames": 20,
+          "fps": 18
+        },
+        "heal": {
+          "start": 184,
+          "frames": 20,
+          "fps": 18
+        }
+      },
+      "frames": 204,
+      "bytes": 66431
+    },
+    "caio": {
+      "id": "caio",
+      "group": "survivor",
+      "file": "assets/characters/caio.png",
+      "width": 64,
+      "height": 80,
+      "columns": 16,
+      "rows": 13,
+      "clips": {
+        "idle": {
+          "start": 0,
+          "frames": 16,
+          "fps": 18
+        },
+        "walk": {
+          "start": 16,
+          "frames": 24,
+          "fps": 24
+        },
+        "run": {
+          "start": 40,
+          "frames": 24,
+          "fps": 24
+        },
+        "hurt": {
+          "start": 64,
+          "frames": 16,
+          "fps": 18
+        },
+        "repair": {
+          "start": 80,
+          "frames": 24,
+          "fps": 18
+        },
+        "down": {
+          "start": 104,
+          "frames": 20,
+          "fps": 18
+        },
+        "hook": {
+          "start": 124,
+          "frames": 20,
+          "fps": 18
+        },
+        "vault": {
+          "start": 144,
+          "frames": 20,
+          "fps": 24
+        },
+        "carry": {
+          "start": 164,
+          "frames": 20,
+          "fps": 18
+        },
+        "heal": {
+          "start": 184,
+          "frames": 20,
+          "fps": 18
+        }
+      },
+      "frames": 204,
+      "bytes": 65857
+    }
+  },
+  "moris": {
+    "reaper": {
+      "file": "assets/moris/reaper.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 159844
+    },
+    "shadow": {
+      "file": "assets/moris/shadow.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 161450
+    },
+    "brute": {
+      "file": "assets/moris/brute.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 147196
+    },
+    "weaver": {
+      "file": "assets/moris/weaver.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 201805
+    },
+    "hunter": {
+      "file": "assets/moris/hunter.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 179335
+    },
+    "specter": {
+      "file": "assets/moris/specter.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 123375
+    },
+    "judge": {
+      "file": "assets/moris/judge.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 152936
+    },
+    "huntress": {
+      "file": "assets/moris/huntress.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 158130
+    },
+    "pyre": {
+      "file": "assets/moris/pyre.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 147490
+    },
+    "frost": {
+      "file": "assets/moris/frost.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 159411
+    },
+    "puppet": {
+      "file": "assets/moris/puppet.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 173138
+    },
+    "raven": {
+      "file": "assets/moris/raven.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 197492
+    },
+    "automaton": {
+      "file": "assets/moris/automaton.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 184879
+    },
+    "siren": {
+      "file": "assets/moris/siren.png",
+      "width": 256,
+      "height": 144,
+      "columns": 8,
+      "frames": 80,
+      "duration": 4.6,
+      "bytes": 214036
+    }
+  },
+  "metadata": {
+    "killer_count": 14,
+    "survivor_count": 6,
+    "mori_frames": 80
+  }
+}
